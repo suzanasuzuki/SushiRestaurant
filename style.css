@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* PARTE SUPERIOR DO SITE */
+
+header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.logoleft {
+    display: flex;
+}
+
+.logoleft img {
+    height: 123px;
+    width: 123px;
+}
+
+.menuright {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+/* SLIDE DO SITE */
+
+.slider {
+    flex: 1;
+    overflow: hidden;
+}
+
+.slider--body {
+    height: 100%;
+    display: flex;
+}
+
+.slider--item {
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
