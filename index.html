@@ -4,34 +4,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sushi</title>
         <link href="./style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="logoleft">
-                    <img src="./assets/imag/logo.jpg" alt="" />
-                </div>
+                    <a>
+                        <img src="./assets/imag/logosushirest.png" alt="" />
+                    </a>
+                    </div>
                 <div class="menuright">
                     <nav>
                         <ul>
-                            <li>Welcome</li>
-                            <li>Restaurante/Bar</li>
-                            <li>Menu</li>
-                            <li>Reserva</li>
-                            <li>Nossa Localização</li>
+                            <li><a href="./">Welcome</a></li>
+                            <li><a href="./">Restaurante</a></li>
+                            <li><a href="">Menu</a></li>
+                            <li><a href="./">Reservas</a></li>
+                            <li><a href="./">Nossa Localização</a></li>
                         </ul>
                     </nav>
+                    <a>
+                     <img src="./assets/imag/iconjapan.png" />
+                     <img src="./assets/imag/iconbrasil2.png" />
+                    </a>
+                </div>
                 </div>
             </div>
             <div class="slider">
-                <div class="slide--control" >
-                    <div class="slider--bottonsnext" onclick="goPrev()" >
-
+                <div class="slider--controls">
+                    <div class="slider--control" onclick="goPrev()">
+                            ANTES
                     </div>
-                    <div class="slider--bottons"onclick="goNext()"></div>
+                    <div class="slider--control" onclick="goNext()">
+                            DEPOIS
+                    </div>
                 </div>
-                <div class="slider--body" style="width: calc(100vw * 3)">
-                    <div class="slider--item" style="background-image: url('./assets/imag/Slider1.jpeg');"></div>
+                <div class="slider--width" style="width: calc(100vw * 3)">
+                    <div class="slider--item" style="background-image: url('./assets/imag/Slider1.jpeg')"></div>
                     <div class="slider--item" style="background-image: url('./assets/imag/slider3.jpeg');"></div>
                     <div class="slider--item" style="background-image: url('./assets/imag/this.jpeg');"></div>
                 </div>

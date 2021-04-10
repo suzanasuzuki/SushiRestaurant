@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family:'Indie Flower', cursive;
 }
 
 body {
@@ -16,21 +17,27 @@ header {
 }
 
 .container {
-    background: #FFF;
+    background: #F8F9FA;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     font-size: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.logoleft img {
+    width: 100px;
 }
 
 .logoleft {
     display: flex;
 }
 
-.logoleft img {
-    height: 123px;
-    width: 123px;
+.logoleft a {
+    display: flex;
+    align-items: center;
 }
 
 .menuright {
@@ -38,14 +45,23 @@ header {
     align-items: center;
 }
 
+.menuright img {
+    width: 28px;
+}
+
+.menuright a {
+    padding: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+
 nav ul {
     display: flex;
 }
 
 nav ul, nav li {
     list-style: none;
-    margin: 0;
-    padding: 5px;
 }
 
 /* SLIDE DO SITE */
@@ -55,9 +71,10 @@ nav ul, nav li {
     overflow: hidden;
 }
 
-.slider--body {
+.slider--width {
     height: 100%;
     display: flex;
+    transition: all ease 0.3s;
 }
 
 .slider--item {
@@ -66,4 +83,6 @@ nav ul, nav li {
     background-position: center;
     background-size: cover;
 }
+
+/*BOTÃO DO SITE DE PROXIMO E ANTES*/
 
